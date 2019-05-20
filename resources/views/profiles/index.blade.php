@@ -3,17 +3,25 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-4">
             img
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8">
+            <div><h1>{{ $user->username }}</h1></div>
+            <a href="#">Add a Post</a>
             <div class="d-flex">
             
 <div class="pr-5">153 Posts</div>
 <div class="pr-5">23k followers</div>
 <div class="pr-5">212 following</div>
+
             </div>
                 
+                <div>
+                    Title: {{ $user->profile->title }} <br />
+                    Url: {{ $user->profile->url }} <br />
+                    Description: {{ $user->profile->description }} <br />
+                </div>    
         </div>
          <div class="col-md-12"><hr /></div>
         <div class="col-md-4">image 1</div>
